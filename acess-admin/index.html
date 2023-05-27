@@ -17,24 +17,21 @@
 </head>
 <body>
     <main class="conteudo">
-        <section class="left">
+        <div class="left">
             <div class="left_titulo">
                 <h1>Acesso <br> Administrador</h1>
                 <img src="../img/VWlogovw.png" alt="">
             </div>
             <p>Este ambiente tem acesso restrito à administradores do BotQuestVW e curadores.</p>
             <span>Atenção: login de administrador requer autenticação de dois fatores.</span>
-        </section>
-        <section class="right">
+        </div>
+        <div class="right">
                 <h1>Faça login</h1>
-                <div class="campo_digito">
-                    <p>Cód. acesso</p>
-                </div>
-                <div class="campo_digito">
-                    <p>PIN</p>
-                </div>
-        </section>
-
+                <input class="campo_digito" type="number" placeholder="Cód. de acesso">
+                <input class="campo_digito" type="password" placeholder="PIN">
+                <a class="botao acessar" href="#">Acessar</a>
+        </div>
+        <div class="voltar"></div>
     </main>
 </body>
 </html>
