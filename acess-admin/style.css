@@ -24,6 +24,7 @@
 
 .left{
     background-color: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(16px);
     width: 53%;
     height: 100%;
 }
@@ -58,17 +59,17 @@
 
 
 .posicao_span_left span{
-    height: 70%;
     display: flex;
-    justify-content: end;
-    align-items: end;
     color: rgb(255, 255, 255, 0.5);
     margin: 0 5% 0 50%;
     text-align: end;
 }
 
 .posicao_span_left{
-    height: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 30%;
     background-color: rgb(102, 51, 153, 0);
 }
 
