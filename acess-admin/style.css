@@ -59,7 +59,6 @@
 
 
 .posicao_span_left span{
-    display: flex;
     color: rgb(255, 255, 255, 0.5);
     margin: 0 5% 0 50%;
     text-align: end;
@@ -67,7 +66,6 @@
 
 .posicao_span_left{
     display: flex;
-    justify-content: end;
     align-items: end;
     height: 30%;
     background-color: rgb(102, 51, 153, 0);
@@ -78,12 +76,10 @@
 
 .right{
     width: 45%;
-    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
 }
 
 .campo_digito p{
@@ -117,7 +113,7 @@ input,
 
 .right h1{
     font-size: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 a{
