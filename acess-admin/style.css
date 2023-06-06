@@ -10,6 +10,10 @@
     --preto: #000000;
 }
 
+.body{
+    transition: ease-in;
+}
+
 .conteudo{
     background-image: url(../img/bg\ \(2\).png);
     background-size: cover;
@@ -141,7 +145,6 @@ a:hover{
 .voltar{
     position: absolute;
     bottom: 0;
-    background-color: #01B0F1;
     height: 5%;
     width: 100%;
 
@@ -155,6 +158,184 @@ a:hover{
 
 .voltar img{
     width: 25px;
+}
+
+
+@media screen and (max-width:990px) {
+    
+    .conteudo{
+        justify-content: space-between;
+    }
+
+    /* AREA ESQUERDA */
+    .left{
+        width: 49%;
+    }
+
+    .left_titulo{
+        width: 105%;
+        height: 100px;
+    }
+    
+    .left_titulo h1{
+        font-size: 30px;
+    }
+    
+    .left_titulo img{
+        left: -20px;
+        width: 80px;
+    }
+
+    .left>p{
+        font-size: 20px;
+    }
+    
+    .posicao_span_left>span{
+        font-size: 12px;
+        height: 35%;
+    }
+
+    /* ÁREA DIREITA */
+    .right>h1{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .campo_digito{
+        padding: 8px 20px;
+        margin-top: 30px;
+        width: 300px;
+        height: 50px;
+        border: 5px solid rgb(255, 255, 255, 0.7);
+    }
+    
+    input,
+    ::placeholder{
+        color: var(--branco);
+        font-size: 10px;
+        font-family: var(--fontbase);
+    }
+}
+
+
+@media screen and (max-width:769px) {
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+/* AREA DO TOPO */
+
+    .left{
+        width: 100%;
+        height: 35%;
+    }
+    
+    .left_titulo{
+        width: 100%;
+        height: 80px;
+        border-radius: 0 80px 80px 0;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .left_titulo h1{
+        margin-left: 40px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .left_titulo img{
+        position: relative;
+        left: -10px;
+        width: 70px;
+    }
+    
+    .conteudo p{
+        margin: 20px 170px 0 40px;
+        font-size: 20px;
+    }
+    
+    
+    .posicao_span_left span{
+        text-align: end;
+    }
+    
+    .posicao_span_left{
+        display: flex;
+        align-items: end;
+        height: 20%;
+        background-color: rgb(102, 51, 153, 0);
+    }
+ 
+    /* AREA DO FIM */
+    .right{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .right>h1{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .acessar{
+        margin-top: 10px;
+        height: 30px;
+        width: 90px;
+        font-size: 15px;
+    }
+
+    .campo_digito p{
+        font-size: 15px;
+    }
+    
+    .campo_digito{
+        margin-top: 20px;
+        width: 250px;
+    }
+    
+}
+
+@media screen and (max-width:331px) {
+    .left>p,
+    .posicao_span_left{
+        display: none;
+    }
+
+    .left{
+        background-color: transparent;
+        height: 60px;
+    }
+
+    .right>h1{
+        font-size: 30px;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .conteudo{
+      background-image: url(../img/VOLKSBOT\ _PAZ_.png), url(../img/bg\ \(2\).png);  
+      background-size: 170px, cover;
+      background-repeat: no-repeat;
+      background-position: bottom right, 0;
+      
+    }
+
+    .voltar{
+        display: none;
+    }
+    
 }
 
 
